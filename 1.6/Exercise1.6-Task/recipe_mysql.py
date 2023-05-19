@@ -20,6 +20,7 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS Recipes(
     difficulty VARCHAR(20))
     ''')
 
+
 def main_menu(conn, cursor):
     choice = ""
     while (choice != "quit"):
@@ -46,6 +47,7 @@ def main_menu(conn, cursor):
             delete_recipe(conn, cursor)
         elif choice == "5":
             view_all_recipes(conn, cursor)
+
 
 def create_recipe(conn, cursor):
     recipe_ingredients = []
