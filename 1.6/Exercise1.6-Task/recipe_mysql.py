@@ -213,3 +213,4 @@ def view_all_recipes(conn, cursor):
 
 main_menu(conn, cursor)
 print("Goodbye\n")
+conn.close()
